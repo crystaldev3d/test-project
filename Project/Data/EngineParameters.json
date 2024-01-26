@@ -1,0 +1,24 @@
+{
+    "Default": [
+        {
+            "Flavor": [
+                {
+                    "key": "*",
+                    "value": ["*"]
+                }
+            ],
+            "Variables": [
+                {
+                    "key": "Plugins",
+                    "type": "String",
+                    "value": "SampleProject"
+                },
+                {
+                    "key": "MainPlugin",
+                    "type": "String",
+                    "value": "SampleProject"
+                }
+            ]
+        }
+    ]
+}
