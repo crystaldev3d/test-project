@@ -2,14 +2,14 @@
 	"LaunchManager": {
 		"Configurations": [
 			{
-				"MainPlugin": "SampleProject",
+				"MainPlugin": "TestProject",
 				"Name": "Play From Here"
 			}
 		]
 	},
 	"PluginManager": {
 		"LoadedPlugins": [
-			"SampleProject"
+			"TestProject"
 		]
 	}
 }

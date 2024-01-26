@@ -80,7 +80,12 @@ void Launcher::Start()
 #endif
 
     auto engine = GetSubsystem<Engine>();
-    const StringVector loadedPlugins = engine->GetParameter(EP_PLUGINS).GetString().split(';');
+    
+    //const StringVector loadedPlugins = engine->GetParameter(EP_PLUGINS).GetString().split(';');
+
+    // this a workaround coz engine->GetParameter(EP_PLUGINS).GetString().split(';'); loads the wrong list of plugins from user/appdata/config...
+    StringVector loadedPlugins;
+    loadedPlugins.push_back("TestProject");
 
     auto pluginManager = GetSubsystem<PluginManager>();
     pluginManager->SetPluginsLoaded(loadedPlugins);
